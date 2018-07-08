@@ -13,8 +13,9 @@ function nowServing(katzDeli){
 }
 
 function currentLine(line){
+  var sub = " " + i+1 + ". " + line[i] 
  for (let i = 0; i < line.length; i++){
-    line.splice(i, 1 , i+1 + ". " + line[i])
+    line.splice(i, 1 , sub)
   }
   return "The line is currently: " +  line
 }
