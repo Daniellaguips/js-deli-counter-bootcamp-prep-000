@@ -16,7 +16,7 @@ function currentLine(line){
  for (let i = 0; i < line.length; i++){
     line.splice(i, 1 , i+1 + ". " + line[i])
   }
-  return "The line is currently: " line
+  return "The line is currently: " +  line
 }
 
 
