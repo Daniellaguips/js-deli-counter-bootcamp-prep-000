@@ -18,8 +18,9 @@ function currentLine(line){
    var sub = " " + parseInt(i+1) + ". " + line[i] 
     line.splice(i, 1 , sub)
   }
-  if line.length
-  return "The line is currently:" +  line
+  if (line.length == 0) {
+    return "The line is currently empty."
+  } else return "The line is currently:" +  line
 }
 
 
