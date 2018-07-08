@@ -14,7 +14,7 @@ function nowServing(katzDeli){
 
 function currentLine(line){
  for (let i = 1; i < line.length; i++){
-    line.splice(i, 1 , i + ". " + line[i])
+    line.splice(i, 1 , i + ". " + line[i-1])
   }
   return line
 }
