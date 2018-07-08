@@ -13,8 +13,8 @@ function nowServing(katzDeli){
 }
 
 function currentLine(line){
-  // for (let i = 0; i < line.length; i++){
-    line.splice(i, 0, "1. ")
+ for (let i = 0; i < line.length; i++){
+    line.splice(i, 1 , i + ". " + line[i])
   }
   return line
 }
